@@ -1,0 +1,46 @@
+.heder__contact-list {
+    display: flex;
+    align-items: center;
+}
+
+.heder__contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__mail,
+.header__phone {
+    font-size: 14px;
+    font-weight: var(--main-font-weight500);
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--anim-main);
+}
+
+.header__mail {
+    color: var(--main-txt-cl);
+    margin-right: 50px;
+
+    &:hover,
+    &:focus {
+        color: var(--main-acsent-cl);
+    }
+}
+
+.header__phone {
+    color: var(--main-txt-cl);
+
+    &:hover,
+    &:focus {
+        color: var(--main-acsent-cl);
+    }
+}
+
+.header__icon {
+    gap: 10px;
+    fill: currentColor;
+}

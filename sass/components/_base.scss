@@ -1,0 +1,20 @@
+body {
+    font-family: var(--main-font);
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    letter-spacing: 0.02em;
+}
+
+.section {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

@@ -1,0 +1,27 @@
+:root {
+    /* font */
+    --main-font: 'Roboto', sans-serif;
+
+    /* txt-cl */
+    --main-title-cl: #212121;
+    --main-txt-cl: #757575;
+    --main-acsent-cl: #2196f3;
+    --main-button-bg: #188ce8;
+    --main-nav-cl: #000000;
+    --main-contact-cl: rgba(255, 255, 255, 0.6);
+    --main-icon: #afb1b8;
+
+    /* bg-cl */
+    --main-bg-cl: #ffffff;
+    --main-bg: #2f303a;
+    --main-bg-commands: #f5f4fa;
+
+    /* athers */
+    --main-font-weight900: 900;
+    --main-font-weight700: 700;
+    --main-font-weight500: 500;
+    --border-radius: 4px;
+
+    --anim-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --anim-fast: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}

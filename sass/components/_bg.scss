@@ -1,0 +1,30 @@
+.bg__section {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.bg__title {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-bg-cl);
+    font-weight: var(--main-font-weight900);
+    width: 696px;
+    margin: auto;
+    margin-bottom: 30px;
+}
