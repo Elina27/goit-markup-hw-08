@@ -1,6 +1,11 @@
-.activity__container {
+.activity__section {
+display: none;
+
+@media screen and (min-width:1200px) {
+    display: flex;
     padding-top: 0;
-    padding-bottom: 94px;
+    padding-bottom: 94px;    
+}
 }
 
 .activity__title {

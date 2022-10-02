@@ -24,7 +24,7 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
+    width: 450px;
     padding: 40px;
 
     background-color: var(--main-bg-cl);
@@ -34,6 +34,15 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--anim-fast);
+
+    @media screen and (max-width:479.5px) {
+    width: 100%;
+    }
+
+    @media screen and (min-width:1200px) {
+    width: 528px;
+    }
+    
 }
 
 .backdrop.is-hidden .modal {

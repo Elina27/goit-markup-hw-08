@@ -1,9 +1,10 @@
 @import './utils/variables';
+@import './utils/normalize';
 @import './components/base';
 @import './components/reset';
 @import './components/logo';
 @import './components/navigation';
-@import './components/contacns';
+@import './components/contacts';
 @import './components/btn';
 @import './components/header';
 @import './components/bg';
@@ -15,6 +16,7 @@
 @import './components/footer';
 @import './components/project';
 @import './components/modal';
+@import './components/menu';
 @import './components/registerform';
 @import './components/overlay';
 

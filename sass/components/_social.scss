@@ -1,7 +1,7 @@
 .social {
     display: flex;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .social__link {
@@ -18,19 +18,18 @@
 
     transition: background-color var(--anim-main);
 
-&:hover,
-&:focus {
-    color: var(--main-acsent-cl);
-    background-color: var(--main-acsent-cl);
-}
+    &:hover,
+    &:focus {
+        color: var(--main-acsent-cl);
+        background-color: var(--main-acsent-cl);
+    }
 
-&:hover .social__icon,
-&:focus .social__icon {
-    fill: var(--main-bg-cl);
-}
+    &:hover .social__icon,
+    &:focus .social__icon {
+        fill: var(--main-bg-cl);
+    }
 }
 
 .social__icon {
     fill: var(--main-icon);
 }
-

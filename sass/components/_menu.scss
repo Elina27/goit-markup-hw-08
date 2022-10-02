@@ -1,0 +1,134 @@
+.menu-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 40px;
+height: 40px;
+padding: 0;
+margin-left: auto;
+
+border: none;
+background-color: transparent;
+
+cursor: pointer;
+
+@media screen and (min-width:768px) {
+    display: none;
+}
+}
+
+.menu-container {
+position: fixed;
+left: 0;
+top: 0;
+z-index: 1000;
+
+display: flex;
+flex-direction: column;
+
+width: 100%;
+height: 100%;
+padding: 48px 40px;
+border: 2px solid red;
+
+background: var(--main-bg-cl);
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+transform: translateX(100%);
+transition: transform 400ms;
+
+@media screen and (min-width:768px) {
+display: none;
+}
+&.is-open {
+    transform: translateX(0);
+}
+}
+
+.menu-toggle {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+    margin-left: auto;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+    fill: var(--main-acsent-cl);
+    }
+}
+
+.menu__nav-list{
+    margin-bottom: auto;}
+
+.menu__nav-item:not(:last-child){
+    margin-bottom: 32px;}
+
+.menu__nav-item:last-child{
+margin-bottom: 100px;
+}
+
+.menu__nav-link{
+    color: var(--main-title-cl);
+    font-size: 40px;
+    font-weight: var(--main-font-weight500);
+    line-height: calc(46 / 40);
+
+    &:hover,
+    &:focus {
+    color: var(--main-acsent-cl);
+    }
+
+}
+
+.carrent {
+color: var(--main-acsent-cl);
+}
+
+.menu__contact-item:not(:last-child) {
+margin-bottom: 32px;
+}
+
+.menu__contact-item:last-child {
+    margin-bottom: 64px;
+}
+
+.menu__phone {
+color: var(--main-acsent-cl);
+font-size: 34px;
+font-weight: var(--main-font-weight500);
+line-height: calc(39 / 34);
+
+@media screen and (max-width:479.5px) {
+    font-size: 24px;
+}
+}
+
+.menu__mail {
+color: var(--main-txt-cl);
+font-size: 24px;
+font-weight: var(--main-font-weight500);
+line-height: calc(28 / 24);
+}
+
+.menu__social {
+display: flex;
+gap: 20px;
+justify-content: left;
+
+color: var(--main-acsent-cl);
+font-size: 18px;
+font-weight: var(--main-font-weight500);
+line-height: calc(22 / 18);
+
+@media screen and (max-width:479.5px) {
+        font-size: 12px;
+    }
+}

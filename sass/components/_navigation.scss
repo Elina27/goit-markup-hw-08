@@ -5,19 +5,24 @@
 }
 
 .header__nav-list {
+
+    display: none;
+
+    @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
     gap: 50px;
+    }
 }
 
 .header__nav-link {
     position: relative;
     color: var(--main-title-cl);
-
     font-size: 14px;
     font-weight: var(--main-font-weight500);
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    
     padding-top: 32px;
     padding-bottom: 32px;
 

@@ -1,9 +1,28 @@
+.heder__contact {
+    display: none;
+
+    @media screen and (min-width:768px){
+display: flex;
+flex-wrap: wrap;
+margin-left: 96px;
+    }
+}
 .heder__contact-list {
+    display: none;
+    
+    @media screen and (min-width:768px) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    }
 }
 
-.heder__contacts-link {
+.heder__contact-link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -11,20 +30,29 @@
 
 .header__mail,
 .header__phone {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: var(--main-font-weight500);
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     transition: color var(--anim-main);
+
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+
+    }
 }
 
 .header__mail {
     color: var(--main-txt-cl);
-    margin-right: 50px;
+    margin-bottom: 10px;
 
+    @media screen and (min-width:1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+    font-size: 14px;
+    }
+   
     &:hover,
     &:focus {
         color: var(--main-acsent-cl);

@@ -40,26 +40,36 @@
                     <a class="header__nav-link" href="">Контакти</a></li>
             </ul>
         </nav>
+        <div class="heder__contact">
         <ul class="heder__contact-list">
             <li class="heder__contact-item">
-            <a class="header__mail heder__contacts-link" href="mailto:info@devstudio.com">
+            <a class="header__mail heder__contact-link" href="mailto:info@devstudio.com">
                 <svg class="header__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
             </svg>info@devstudio.com</a></li>
                 <li class="heder__contact-item">
-                <a class="header__phone heder__contacts-link" href="tel:+380961111111">
+                <a class="header__phone heder__contact-link" href="tel:+380961111111">
                     <svg class="header__icon" width="10px" height="16px">
                     <use href="./images/icons.svg#icon-phone"></use>
                 </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
+        <!-- Мобільне меню -->
+        <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+        </div>
+
     </header>
+
     <main>
         <!--Секція Ефективні рішення для вашого бізнесу (BG)-->
         <section class="bg__section section"> 
             <div class="bg__container container">
             <h1 class="bg__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="btn" type="button" data-modal-open>Замовити послугу</button>
+            <button class="btn__bg btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
         </section>
         <!-- Секція Наші переваги-->
@@ -142,11 +152,21 @@
         
         <section class="team__section section">
             <div class="team__container container">
-            <h2>Наша команда</h2>
+            <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__img" src="./images/nameimg.jpg" alt="photo_igor_demyanenko" width="270"
-                        height="260" />
+                    <img 
+                 srcset="
+                ./images/team/img_270desc1-@1x.jpg 270w,
+                ./images/team/img_354tab1-@1x.jpg 354w,
+                ./images/team/img_450mob1-@1x.jpg 450w,
+                ./images/team/img_540desc1-@2x.jpg 540w,
+                ./images/team/img_708tab1-@2x.jpg 708w,
+                ./images/team/img_900mob1-@2x.jpg 900w,
+                 "   
+                sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                   src="./images/team/img_270desc1-@1x.jpg" alt="photo_igor_demyanenko"
+                     />
                         <div class="team__card">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p class="team__position" lang="en">Product Designer</p>
@@ -195,8 +215,16 @@
                 </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./images/nameimg-1.jpg" alt="photo_olga_repina" width="270"
-                        height="260" />
+                    <img srcset="
+                        ./images/team/img_270desc2-@1x.jpg 270w,
+                        ./images/team/img_354tab2-@1x.jpg 354w,
+                        ./images/team/img_450mob2-@1x.jpg 450w,
+                        ./images/team/img_540desc2-@2x.jpg 540w,
+                        ./images/team/img_708tab2-@2x.jpg 708w,
+                        ./images/team/img_900mob2-@2x.jpg 900w,
+                 "sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/img_270desc2-@1x.jpg" 
+                        alt="photo_olga_repina" />
                         <div class="team__card">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
@@ -237,8 +265,15 @@
                         </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./images/nameimg-2.jpg" alt="photo_mikola_tarasov" width="270"
-                        height="260" />
+                    <img srcset="
+                        ./images/team/img_270desc3-@1x.jpg 270w,
+                        ./images/team/img_354tab3-@1x.jpg 354w,
+                        ./images/team/img_450mob3-@1x.jpg 450w,
+                        ./images/team/img_540desc3-@2x.jpg 540w,
+                        ./images/team/img_708tab3-@2x.jpg 708w,
+                        ./images/team/img_900mob3-@2x.jpg 900w,
+                    " sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/img_270desc3-@1x.jpg" alt="photo_mikola_tarasov" />
                         <div class="team__card">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
@@ -279,11 +314,19 @@
                         </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./images/nameimg-3.jpg" alt="photo_mihailo_yermakov" width="270"
-                        height="260" />
+                    <img srcset="
+                        ./images/team/img_270desc4-@1x.jpg 270w,
+                        ./images/team/img_354tab4-@1x.jpg 354w,
+                        ./images/team/img_450mob4-@1x.jpg 450w,
+                        ./images/team/img_540desc4-@2x.jpg 540w,
+                        ./images/team/img_708tab4-@2x.jpg 708w,
+                        ./images/team/img_900mob4-@2x.jpg 900w,
+                    " sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+    src="./images/team/img_270desc4-@1x.jpg" alt="photo_mihailo_yermakov" />
+
                         <div class="team__card">
-                                                <h3 class="team-name">Михайло Єрмаков</h3>
-                                                <p class="team-position" lang="en">UI Designer</p>
+                                                <h3 class="team__name">Михайло Єрмаков</h3>
+                                                <p class="team__position" lang="en">UI Designer</p>
                             <ul class="social list">
                                 <li class="social__item">
                                     <a class="social__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
@@ -327,7 +370,7 @@
         <!-- Постійні клієнти-->
         <section class="customers section">
 <div class="customers__container container ">
-            <h2>Постійні клієнти</h2>
+            <h2 class="customers__title">Постійні клієнти</h2>
             <div class="icon-conteinar">
 <ul class="customers__list">
     <li class="customers__item">
@@ -381,7 +424,7 @@
     <footer class="footer section">
         <div class="container footer-container">
             <div class="contact-footer">
-        <a class="logo" href="./index.html">Web<span class="span-footer">Studio</span></a>
+        <a class="footer-logo logo" href="./index.html">Web<span class="span-footer">Studio</span></a>
         <address class="footer-adress">
             <ul class="footer-contact-list">
                 <li class="footer-contact-item"><a class="footer-adress"
@@ -432,7 +475,7 @@
         </div>
                 <div class="footer-mailing-list">
                     <strong class="footer-subscription">Підпишіться на розсилку</strong>
-        <form>
+        <form class="footer-register">
                             <label>
                     <input class="footer-mail-subscription" type="email" name="mailing-list" placeholder="E-mail" />
                 </label>
@@ -496,7 +539,58 @@
         </div>
     </div>
 
+    <!-- mobile menu -->
+ 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+                <a class="menu__nav-link carrent" href="">Студія</a>
+            </li>
+            <li class="menu__nav-item">
+                <a class="menu__nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__nav-item">
+                <a class="menu__nav-link" href="">Контакти</a>
+            </li>
+        </ul>
+        <ul class="menu__contact-list">
+            <li class="menu__contact-item">
+                <a class="menu__phone heder__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__contact-item">
+                <a class="menu__mail heder__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="menu__social">
+            <li class="menu__social-item">
+                <a class="link" href="https://www.Instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="menu__social-item">
+                <a class="link" href="https://www.Twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li class="menu__social-item">
+                <a class="link" href="https://www.Facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="menu__social-item">
+                <a class="link" href="https://www.Linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            </li>
+        </ul>
+    
+    </div>
+
+
 <script src="./js/modal.js"></script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+
 
 </body>
 
