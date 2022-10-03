@@ -1631,6 +1631,7 @@ ul {
   transition: -webkit-transform 400ms;
   transition: transform 400ms;
   transition: transform 400ms, -webkit-transform 400ms;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
