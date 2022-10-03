@@ -285,6 +285,20 @@ summary {
   display: list-item;
 }
 
+body {
+  font-family: var(--main-font);
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  letter-spacing: 0.02em;
+}
+
+.section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   max-width: 480px;
   padding-left: 15px;
@@ -301,20 +315,6 @@ summary {
   .container {
     max-width: 1200px;
   }
-}
-
-body {
-  font-family: var(--main-font);
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
-  letter-spacing: 0.02em;
-}
-
-.section {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h2,
@@ -621,19 +621,19 @@ ul {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img_mob-@1x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .bg__section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/img_tab-@2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img_tab-@2x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .bg__section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/img_desc-@1x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img_desc-@1x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-width: 769px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .bg__section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/img-desc-@2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img-desc-@2x.jpg);
@@ -1710,7 +1710,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -1723,6 +1722,18 @@ ul {
   .menu__social {
     font-size: 12px;
   }
+}
+
+.menu__social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__social-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.menu__social-item:not(:last-child) {
+  padding-right: 10px;
 }
 
 .register-form-title {

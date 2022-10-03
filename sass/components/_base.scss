@@ -1,3 +1,17 @@
+body {
+    font-family: var(--main-font);
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    letter-spacing: 0.02em;
+}
+
+.section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container{
 
 max-width: 480px;
@@ -16,20 +30,6 @@ margin-right: auto;
     max-width: 1200px;
 }
 }
-
-body {
-    font-family: var(--main-font);
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
-    letter-spacing: 0.02em;
-}
-
-.section {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
- }
 
  h2,
  h3 {

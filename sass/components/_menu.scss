@@ -120,7 +120,6 @@ line-height: calc(28 / 24);
 
 .menu__social {
 display: flex;
-gap: 20px;
 justify-content: left;
 
 color: var(--main-acsent-cl);
@@ -131,4 +130,14 @@ line-height: calc(22 / 18);
 @media screen and (max-width:479.5px) {
         font-size: 12px;
     }
+}
+
+.menu__social-item:not(:last-child) {
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.menu__social-item:not(:first-child) {
+padding-left: 10px;
+}
+.menu__social-item:not(:last-child) {
+padding-right: 10px;
 }
