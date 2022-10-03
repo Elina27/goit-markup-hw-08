@@ -9,13 +9,24 @@
     left: 0;
     width: 100%;
     height: 101%;
-    padding: 63px 24px;
+    padding: 77px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform var(--anim-fast);
     transform: translateY(100%);
+
+    @media screen and (min-width:768px) {
+    padding-top: 49px; 
+    padding-bottom: 77px; 
+    padding-left: 24px;
+    padding-right: 24px;
+    }
+
+    @media screen and (min-width:1200px) {
+    padding: 63px 24px;
+    }
 }
 
 .project-link:hover .overlay {
