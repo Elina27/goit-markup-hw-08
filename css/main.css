@@ -291,7 +291,6 @@ summary {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1375,10 +1374,6 @@ ul {
   }
 }
 
-.project-container {
-  outline: 2px solid red;
-}
-
 .project-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1624,7 +1619,6 @@ ul {
   width: 100%;
   height: 100%;
   padding: 48px 40px;
-  border: 2px solid red;
   background: var(--main-bg-cl);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
