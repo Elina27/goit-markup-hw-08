@@ -36,6 +36,8 @@
     border-radius: 4px;
     outline: none;
 
+    transition: border-color var(--anim-main);
+
 &:hover,
 &:focus {
     border-color: var(--main-acsent-cl);

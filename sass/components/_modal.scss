@@ -73,6 +73,8 @@
     border-radius: 50px;
     cursor: pointer;
 
+    transition: fill var(--anim-main);
+
     &:hover {
         fill: var(--main-acsent-cl);
     }
